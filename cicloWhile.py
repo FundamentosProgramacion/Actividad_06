@@ -1,6 +1,6 @@
 #encoding:UTF-8
 #Jorge Daniel Jurez Ruiz
-#Numeros enteros
+#Elegir entre contar insectos por días, elegir el numero más alto o salir
 
 def contarInsectos():
     i=0
@@ -23,11 +23,10 @@ def calcularMayor():
     n=0
     h=0
     while n!=-1:
-        n=int(input("Numero"))
+        n=int(input("Numero (para terminar colocar -1)"))
         print (n)
-        g=n
-        if g>h:
-            h=g
+        if n>h:
+            h=n
     if h==0:
         print("No hay datos para encontar el valor mayor")
     else:
